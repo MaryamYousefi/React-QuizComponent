@@ -17,7 +17,7 @@ showNextQuestion(){
 }
 handleResetClick()
 {
-this.props.resetClickHandler()
+  this.setState({quiz_position : 1})
 }
 render(){
   const isQuizEnd = ((this.state.quiz_position - 1) === quizData.quiz_questions.length)
